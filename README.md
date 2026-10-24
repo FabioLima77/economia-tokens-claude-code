@@ -14,6 +14,7 @@ Claude reads the whole conversation again on every answer. A chat with 300,000 t
 
 | Part | When | What it does |
 | --- | --- | --- |
+| Model line | Start of each answer | Opens every reply with a line naming the model that is answering, for example `[Haiku 5.5 · principal]`, so you always know which model you are paying for. |
 | Long-conversation warning | Before each prompt | Warns and asks Claude to suggest a new conversation with a summary, once the chat passes your limit. |
 | Token footer | After each answer | Shows tokens per model: main model, subagents and advisor. |
 | `economy-tokens` skill | When you ask about saving tokens | Explains the habits that keep costs low. |
@@ -45,7 +46,6 @@ Then start a new conversation so the hooks load.
 | Variable | Default | Meaning |
 | --- | --- | --- |
 | `ECONOMY_TOKENS_LIMIT` | `300000` | Tokens read per answer before the long-conversation warning appears. |
-
 Set it in the `env` block of `~/.claude/settings.json`, for example `"ECONOMY_TOKENS_LIMIT": "170000"`.
 
 To choose which model runs the main chat, the subagents and the advisor, see [docs/model-setup.md](docs/model-setup.md).

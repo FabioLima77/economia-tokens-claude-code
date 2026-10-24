@@ -14,6 +14,7 @@ O Claude relê a conversa inteira a cada resposta. Um chat com 300 mil tokens cu
 
 | Parte | Quando | O que faz |
 | --- | --- | --- |
+| Linha do modelo | Início de cada resposta | Abre cada resposta com uma linha que diz qual modelo está respondendo, por exemplo `[Haiku 5.5 · principal]`, para você saber sempre qual modelo está gastando. |
 | Aviso de conversa longa | Antes de cada pedido | Avisa e pede ao Claude para sugerir uma conversa nova com um resumo, quando o chat passa do seu limite. |
 | Rodapé de tokens | Fim de cada resposta | Mostra os tokens do modelo principal, dos subagentes e do conselheiro. |
 | Skill `economy-tokens` | Quando você pergunta como economizar | Explica os hábitos que mantêm o custo baixo. |
@@ -45,7 +46,6 @@ Depois, inicie uma conversa nova para os ganchos carregarem.
 | Variável | Padrão | Significado |
 | --- | --- | --- |
 | `ECONOMY_TOKENS_LIMIT` | `300000` | Tokens lidos por resposta antes do aviso de conversa longa. |
-
 Coloque no bloco `env` do arquivo `~/.claude/settings.json`, por exemplo `"ECONOMY_TOKENS_LIMIT": "170000"`.
 
 Para escolher o modelo do chat principal, dos subagentes e do conselheiro, veja [docs/model-setup.md](docs/model-setup.md).
