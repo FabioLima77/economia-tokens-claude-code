@@ -1,6 +1,6 @@
-# Economia Tokens for Claude Code
+# Economy Tokens for Claude Code
 
-**Spend fewer tokens in Claude Code.** Economia Tokens warns you when a conversation gets too long (and expensive), and shows how many tokens each model used after every answer.
+**Spend fewer tokens in Claude Code.** Economy Tokens warns you when a conversation gets too long (and expensive), and shows how many tokens each model used after every answer.
 
 Built by [FabioLima77](https://github.com/FabioLima77). Português: see [README.pt-BR.md](README.pt-BR.md).
 
@@ -8,7 +8,7 @@ Built by [FabioLima77](https://github.com/FabioLima77). Português: see [README.
 
 ## Why
 
-Claude reads the whole conversation again on every answer. A chat with 300,000 tokens costs far more per message than a fresh one. Economia Tokens makes that cost visible and nudges you to start fresh at the right moment.
+Claude reads the whole conversation again on every answer. A chat with 300,000 tokens costs far more per message than a fresh one. Economy Tokens makes that cost visible and nudges you to start fresh at the right moment.
 
 ## What it does
 
@@ -16,7 +16,7 @@ Claude reads the whole conversation again on every answer. A chat with 300,000 t
 | --- | --- | --- |
 | Long-conversation warning | Before each prompt | Warns and asks Claude to suggest a new conversation with a summary, once the chat passes your limit. |
 | Token footer | After each answer | Shows tokens per model: main model, subagents and advisor. |
-| `economia-tokens` skill | When you ask about saving tokens | Explains the habits that keep costs low. |
+| `economy-tokens` skill | When you ask about saving tokens | Explains the habits that keep costs low. |
 
 Everything runs on your computer. Nothing is sent anywhere.
 
@@ -25,17 +25,17 @@ Everything runs on your computer. Nothing is sent anywhere.
 After this repository is public, run these two commands in a terminal, one at a time:
 
 ```bash
-claude plugin marketplace add FabioLima77/economia-tokens-claude-code
+claude plugin marketplace add FabioLima77/economy-tokens-claude-code
 ```
 
 ```bash
-claude plugin install economia-tokens@economia-tokens-marketplace
+claude plugin install economy-tokens@economy-tokens-marketplace
 ```
 
 To install from a folder on your computer instead:
 
 ```bash
-claude plugin marketplace add "C:\path\to\economia-tokens-claude-code"
+claude plugin marketplace add "C:\path\to\economy-tokens-claude-code"
 ```
 
 Then start a new conversation so the hooks load.
@@ -44,9 +44,9 @@ Then start a new conversation so the hooks load.
 
 | Variable | Default | Meaning |
 | --- | --- | --- |
-| `ECONOMIA_TOKENS_LIMIT` | `300000` | Tokens read per answer before the long-conversation warning appears. |
+| `ECONOMY_TOKENS_LIMIT` | `300000` | Tokens read per answer before the long-conversation warning appears. |
 
-Set it in the `env` block of `~/.claude/settings.json`, for example `"ECONOMIA_TOKENS_LIMIT": "170000"`.
+Set it in the `env` block of `~/.claude/settings.json`, for example `"ECONOMY_TOKENS_LIMIT": "170000"`.
 
 To choose which model runs the main chat, the subagents and the advisor, see [docs/model-setup.md](docs/model-setup.md).
 
@@ -55,19 +55,19 @@ To choose which model runs the main chat, the subagents and the advisor, see [do
 Pause it:
 
 ```bash
-claude plugin disable economia-tokens@economia-tokens-marketplace
+claude plugin disable economy-tokens@economy-tokens-marketplace
 ```
 
 Turn it back on:
 
 ```bash
-claude plugin enable economia-tokens@economia-tokens-marketplace
+claude plugin enable economy-tokens@economy-tokens-marketplace
 ```
 
 Remove it:
 
 ```bash
-claude plugin uninstall economia-tokens@economia-tokens-marketplace
+claude plugin uninstall economy-tokens@economy-tokens-marketplace
 ```
 
 ## Notes and limits
@@ -79,7 +79,7 @@ claude plugin uninstall economia-tokens@economia-tokens-marketplace
 ## Project layout
 
 ```
-economia-tokens-claude-code/
+economy-tokens-claude-code/
 ├── .claude-plugin/
 │   ├── plugin.json          # plugin identity
 │   └── marketplace.json     # lets you install with "claude plugin marketplace add"
@@ -88,7 +88,7 @@ economia-tokens-claude-code/
 │   ├── warn-long-conversation.js
 │   └── token-footer.js
 ├── skills/
-│   └── economia-tokens/SKILL.md # habits to save tokens
+│   └── economy-tokens/SKILL.md # habits to save tokens
 └── docs/
     ├── model-setup.md
     └── index.html           # presentation page

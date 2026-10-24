@@ -1,5 +1,5 @@
 {
-  "name": "economia-tokens-marketplace",
+  "name": "economy-tokens-marketplace",
   "owner": {
     "name": "FabioLima77"
   },
@@ -8,7 +8,7 @@
   },
   "plugins": [
     {
-      "name": "economia-tokens",
+      "name": "economy-tokens",
       "source": "./",
       "description": "Warns you when a conversation gets too long and shows per-model token usage after every answer.",
       "version": "0.1.0",

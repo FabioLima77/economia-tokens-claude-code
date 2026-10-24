@@ -1,9 +1,9 @@
 // UserPromptSubmit hook: when the conversation gets long, tell Claude to suggest
 // starting a fresh conversation with a summary of the current topic.
-// Threshold: ECONOMIA_TOKENS_LIMIT (tokens read per answer). Default 300000.
+// Threshold: ECONOMY_TOKENS_LIMIT (tokens read per answer). Default 300000.
 const fs = require('fs')
 
-const LIMIT = Number(process.env.ECONOMIA_TOKENS_LIMIT) || 300000
+const LIMIT = Number(process.env.ECONOMY_TOKENS_LIMIT) || 300000
 
 let input = ''
 process.stdin.on('data', d => (input += d))

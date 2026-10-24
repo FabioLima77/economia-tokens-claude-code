@@ -1,10 +1,10 @@
 // Stop hook: after each answer, show which models worked on the request
 // (main model, subagents and advisor) and how many tokens each one used.
-// Long-conversation note uses ECONOMIA_TOKENS_LIMIT, same as warn-long-conversation.js.
+// Long-conversation note uses ECONOMY_TOKENS_LIMIT, same as warn-long-conversation.js.
 const fs = require('fs')
 const path = require('path')
 
-const LIMIT = Number(process.env.ECONOMIA_TOKENS_LIMIT) || 300000
+const LIMIT = Number(process.env.ECONOMY_TOKENS_LIMIT) || 300000
 const MODEL_NAMES = { 'claude-opus-5-5': 'Opus', 'claude-sonnet-5-5': 'Sonnet', 'claude-haiku-5-5': 'Haiku' }
 const modelName = m => MODEL_NAMES[m] || m
 const k = n => (n >= 1000 ? (n / 1000).toFixed(1).replace('.0', '') + 'k' : String(n))

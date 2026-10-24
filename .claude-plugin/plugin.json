@@ -1,13 +1,13 @@
 {
-  "name": "economia-tokens",
+  "name": "economy-tokens",
   "version": "0.1.0",
   "description": "Spend fewer tokens in Claude Code: warns you when a conversation gets too long and shows per-model token usage after every answer.",
   "author": {
     "name": "FabioLima77",
     "url": "https://github.com/FabioLima77"
   },
-  "homepage": "https://fabiolima77.github.io/economia-tokens-claude-code/",
-  "repository": "https://github.com/FabioLima77/economia-tokens-claude-code",
+  "homepage": "https://fabiolima77.github.io/economy-tokens-claude-code/",
+  "repository": "https://github.com/FabioLima77/economy-tokens-claude-code",
   "license": "MIT",
   "keywords": ["tokens", "cost", "savings", "hooks", "subagents", "advisor", "context"]
 }
