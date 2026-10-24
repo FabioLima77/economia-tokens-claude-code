@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 170" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="760" height="170" rx="18" fill="#0f172a"/>
+  <text x="28" y="46" fill="#94a3b8" font-size="15">Claude Code · end of answer</text>
+  <rect x="28" y="66" width="704" height="80" rx="12" fill="#1e293b"/>
+  <text x="48" y="100" fill="#e2e8f0" font-size="16">Tokens for this request →</text>
+  <text x="48" y="128" fill="#7dd3fc" font-size="15">Haiku (main): 305 new · 200k cached · 40 out   |   Sonnet (subagent): 1k new · 8k cached · 300 out</text>
+</svg>

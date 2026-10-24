@@ -1,0 +1,19 @@
+{
+  "name": "economia-tokens-marketplace",
+  "owner": {
+    "name": "FabioLima77"
+  },
+  "metadata": {
+    "description": "Single-plugin marketplace for Claude Code token savings."
+  },
+  "plugins": [
+    {
+      "name": "economia-tokens",
+      "source": "./",
+      "description": "Warns you when a conversation gets too long and shows per-model token usage after every answer.",
+      "version": "0.1.0",
+      "category": "productivity",
+      "keywords": ["tokens", "cost", "savings", "hooks", "subagents"]
+    }
+  ]
+}
