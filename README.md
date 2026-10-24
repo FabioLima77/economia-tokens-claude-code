@@ -94,6 +94,10 @@ economia-tokens-claude-code/
     └── index.html           # presentation page
 ```
 
+## Support
+
+If this saves you money, you can support the project with a donation on [GitHub Sponsors](https://github.com/sponsors/FabioLima77). Thank you!
+
 ## License
 
 MIT. See [LICENSE](LICENSE).

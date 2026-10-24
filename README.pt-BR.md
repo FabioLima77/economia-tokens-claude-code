@@ -64,6 +64,10 @@ Para ligar de novo, use `enable` no lugar de `disable`. Para remover, use `unins
 - A abertura automática de conversa nova existe só no app desktop. No terminal, o aviso pede para você abrir uma conversa nova (ou usar `/clear`) e colar o resumo.
 - Os números do rodapé vêm do registro da conversa no seu computador. Servem para comparar, não são a fatura exata.
 
+## Apoie o projeto
+
+Se isso economiza seu dinheiro, você pode apoiar com uma doação no [GitHub Sponsors](https://github.com/sponsors/FabioLima77). Obrigado!
+
 ## Licença
 
 MIT. Veja [LICENSE](LICENSE).
